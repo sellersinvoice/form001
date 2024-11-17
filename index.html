@@ -32,7 +32,7 @@
 
     try {
         // Step 1: Fetch current data
-        const response = await fetch(binUrl, { headers });
+        const response = await fetch(binUrl);
         if (!response.ok) throw new Error('Failed to fetch current bin data');
         const binData = await response.json();
 
